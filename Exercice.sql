@@ -1,29 +1,28 @@
 Creation de la table items 
 
 CREATE TABLE items (
-  item_id SERIAL PRIMARY KEY,
-  item_name VARCHAR(50) NOT NULL,
-  price INTEGER NOT NULL
+  id SERIAL PRIMARY KEY,
+  itemname VARCHAR(50) NOT NULL,
+  itemprice INTEGER NOT NULL
 );
 
 Inserer les valeurs dans items
 
-INSERT INTO items (item_name, price)VALUES 
+INSERT INTO items (itemname, itemprice)VALUES 
 ('Small Desk', 100),
 ('Large Desk', 300),
 ('Fan', 80);
 
 Creation de la table customers
 
-CREATE TABLE customers ( customers 
-  customer_id SERIAL PRIMARY KEY,
-  first_name VARCHAR(50) NOT NULL,
-  last_name VARCHAR(50) NOT NULL
+CREATE TABLE customers ( idcustomers SERIAL PRIMARY KEY,
+  customersname VARCHAR(50) NOT NULL,
+  customerslastname VARCHAR(50) NOT NULL
 );
 
 Inserer des valeurs dans la table  customers 
 
-INSERT INTO customers (first_name, last_name)
+INSERT INTO customers (customersname, customerslastname)
 VALUES 
 ('Greg', 'Jones'),
 ('Sandra', 'Jones'),
